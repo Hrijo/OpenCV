@@ -9,16 +9,16 @@ while True:
     height = int(img.get(4))
 
     #threshold on orange
-    # lower = (0,60,200)
-    # upper = (110,160,255)
+    lower = (0,0,0)
+    upper = (50,165,255)
     
     #threshold on Blue
     # lower = (112,2,33)
     # upper = (255,204,110)
 
     #threshold on Blue test 2
-    lower = (66,1,1)
-    upper = (255,184,184)
+    #lower = (66,1,1)
+    #upper = (255,184,184)
 
     thresh = cv2.inRange(frm, lower, upper)
 
